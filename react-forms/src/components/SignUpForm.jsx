@@ -8,11 +8,11 @@ export default function SignUpForm({ token, setToken }) {
   const [validationError, setValidationError] = useState(null);
 
   function validateInputs() {
-    if (username.length < 3) {
-      return "Username must be at least 3 characters long.";
+    if (username.length < 8) {
+      return "Username must be at least 8 characters long.";
     }
-    if (password.length < 6) {
-      return "Password must be at least 6 characters long.";
+    if (password.length < 8) {
+      return "Password must be at least 8 characters long.";
     }
     return null;
   }
